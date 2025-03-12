@@ -17,10 +17,10 @@ const QuoteBox = () => {
   return (
     <div className="quote-box" id="quote-box">
       <p className="quote-text" id="text">
-        "{quote}""
+        "{quote}"
       </p>
       <p className="quote-author" id="author">
-        -{author}
+        - {author}
       </p>
       <button className="new-btn" id="new-quote" onClick={onClickHandler}>
         Generate New Quote
@@ -31,7 +31,6 @@ const QuoteBox = () => {
           target="_blank"
           id="tweet-quote"
           href="twitter.com/intent/tweet"
-          style={{ backgroundColor: "#1da1f2" }}
         >
           Tweet this quote
         </a>

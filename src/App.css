@@ -1,7 +1,17 @@
+/* General App Styling */
 .App {
   text-align: center;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light grey text for contrast */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
 }
 
+/* Logo Animation */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,26 +23,82 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Quote Box Styling */
+#quote-box {
+  background-color: #1e1e1e; /* Slightly lighter dark for contrast */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Quote Text */
+#text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Quote Author */
+#author {
+  font-size: 1rem;
+  color: #bbbbbb;
+  margin-bottom: 1.5rem;
+}
+
+#new-quote {
+  background-color: #8b5cf6; /* Elegant purple shade */
+  color: #ffffff; /* White text for contrast */
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  outline: none; /* Removes default focus outline */
+}
+
+#new-quote:hover {
+  background-color: #7c3aed; /* Slightly deeper purple on hover */
+  transform: scale(1.05); /* Subtle pop effect */
+}
+
+#new-quote:active {
+  background-color: #6d28d9; /* Darker shade on click */
+  transform: scale(0.98); /* Slight press effect */
+}
+
+a {
+  display: inline-block;
+  background-color: #1da1f2; /* Twitter blue */
+  color: #ffffff;
+  margin-top: 1rem;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none; /* Remove default underline */
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  outline: none; /* Removes default focus outline */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .QuoteBox {
+    padding: 1.5rem;
+    font-size: 1rem;
   }
 }
