@@ -25,14 +25,17 @@ const QuoteBox = () => {
       <button className="new-btn" id="new-quote" onClick={onClickHandler}>
         Generate New Quote
       </button>
-      <a
-        className="tweet-a"
-        target="_blank"
-        id="tweet-quote"
-        href="twitter.com/intent/tweet"
-      >
-        Tweet this quote
-      </a>
+      <div className="social-media">
+        <a
+          className="tweet-a"
+          target="_blank"
+          id="tweet-quote"
+          href="twitter.com/intent/tweet"
+          style={{ backgroundColor: "#1da1f2" }}
+        >
+          Tweet this quote
+        </a>
+      </div>
     </div>
   );
 };
